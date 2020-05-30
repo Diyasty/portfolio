@@ -1,0 +1,83 @@
+$primary: rgb(17, 228, 87);
+$secondary: rgb(255, 241, 47);
+
+.home {
+  background-color: rgba(64, 65, 51, 0.863);
+  color: $primary;
+  position: relative;
+  height: 450px;
+  font-size: 1rem;
+  .title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-thumbnail {
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 35%;
+    top: 22%;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+  .typing {
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+.about {
+  background-color: rgba(64, 65, 51, 0.863);
+  color: #fff;
+  text-align: center;
+  h2 {
+    font-size: 2.8em;
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+  .fa-star {
+    margin-bottom: 1px auto;
+  }
+
+  hr {
+    border: 2px solid $primary;
+    width: 15.7em;
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+
+  hr,
+  .fa-star {
+    color: $primary;
+    padding: 0 0.25em;
+  }
+
+  .starcontainer .fa {
+    color: $primary;
+  }
+  p {
+    font-size: 1.5em;
+
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}

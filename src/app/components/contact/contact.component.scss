@@ -1,0 +1,48 @@
+$primary: rgb(17, 228, 87);
+$secondary: rgb(255, 241, 47);
+.contact {
+  background-color: rgba(64, 65, 51, 0.863);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto !important;
+  height: 100vh;
+  h5 {
+    color: $primary;
+  }
+  h2 {
+    font-size: 2.8em;
+
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+  .fa-star {
+    margin-bottom: 3px auto;
+  }
+
+  hr {
+    border: 0.5px solid #fff;
+    width: 15.7em;
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+
+  hr,
+  .fa-star {
+    color: #ffff;
+    padding: 0.5px 0.5em;
+  }
+
+  .starcontainer .fa {
+    color: #ffff;
+  }
+  .img-thumbnail {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 35%;
+    &:hover {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+}

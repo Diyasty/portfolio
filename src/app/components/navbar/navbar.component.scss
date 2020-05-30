@@ -1,0 +1,11 @@
+.navbar-x .navbar-brand,
+.navbar-x .navbar-text,
+.nav-link,
+.navbar-toggler-icon,
+.fa .fa-navicon {
+  cursor: pointer;
+  color: rgb(47, 255, 134) !important;
+  &:hover {
+    color: rgb(255, 241, 47) !important;
+  }
+}
